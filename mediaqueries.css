@@ -24,6 +24,13 @@
       margin-top: 2rem;
     }
 
+    .details-container{
+      /* background:black; */
+      /* padding: 1rem; */
+      margin-right: auto;
+      justify-content: center;
+    }
+
     .about-section-container {
       flex-wrap: wrap;
     }
@@ -34,7 +41,8 @@
 
     .education-expriance{
       flex-wrap: wrap;
-      padding: 1rem;
+      /* padding: 1rem; */
+      justify-content: center;
     }
 
     #profile,
