@@ -163,9 +163,15 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
-  border-radius: 12rem;
+  border-radius: 1rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
+
+   mask-image: radial-gradient(closest-side, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+  mask-mode: alpha;
+  -webkit-mask-image: radial-gradient(closest-side, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+  -webkit-mask-mode: alpha;
+  transition: transform .28s ease, filter .28s ease;
 }
 
 .section__text {
@@ -330,8 +336,8 @@ section {
   height: 70%;
 }
 .section__pic-container {
-  height: 400px;
-  width: 400px;
+  height: 512px;
+  width: 512px;
   margin: auto 0;
 }
 

@@ -1,16 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kaushik Jadav</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Kaushik Jadav</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaushik Jadav</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Kaushik Jadav</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Kaushik Jadav</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/Kaushik.png" alt="profile pictire" class="profile-pic-icon" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello i'am</p>
+      <h1 class="title">Kaushik jadav</h1>
+      <p class="section__text__p2">Game Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/KaushikJadavResume.pdf')">
+          Dowanload Resume
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="linkedin" class="icon"
+          onclick="window.open('https://www.linkedin.com/in/kaushik-jadav-9b9568148/','_blank')" />
+        <img src="./assets/github.png" alt="linkedin" class="icon" onclick="location.href='https://github.com/'" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="about-section-container">
+      <div class="about-me-container">
+        <div class="education-expriance">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Expriance Icon" class="icon" />
+            <h3>Expriance</h3>
+            <p>5+ Years <br />Unity3D Game Developer</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education Icon" class="icon" />
+            <h3>Education</h3>
+            <p>
+              Computer Enginaring <br />Vishwakarma Government Engineering
+              College Chandkheda, Ahmedabad
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-me-container">
+        <div class="education-expriance">
+          <div class="details-container">
+            <img src="./assets/ES.png" alt="Compney Icon" class="Compney-icon" />
+            <h2>Essendon Studios</h2>
+            <p>JUNE 2017 - NOVEMBER 2018</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/JE.png" alt="Compney Icon" class="Compney-icon" />
+            <h3>Jash Entertainment</h3>
+            <p>FEBRUARY 2019 - APRIL 2020</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/morosq.png" alt="Compney Icon" class="Compney-icon" />
+            <h3>MOROSQ</h3>
+            <p>AUGUST 2020 - AUGUST 2022</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/MT.png" alt="Compney Icon" class="Compney-icon" />
+            <h3>ManekTech</h3>
+            <p>AUGUST 2022 - PRESENT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+
+  <section id="experience">
+    <!-- <p class="section__text__p1">Explore My Skills</p> -->
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <!-- <h2 class="experience-sub-title">Game Developer</h2> -->
+          <div class="article-container">
+            <article>
+              <img src="./assets/Unity.png" alt="Experiance icon" class="Skill-icon" />
+              <div>
+                <h3>Unity 3D</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/CSharp.png" alt="Experiance icon" class="Skill-icon" />
+              <div>
+                <h3>C#</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/github.png" alt="Experiance icon" class="Skill-icon" />
+              <div>
+                <h3>Github</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/xcode.png" alt="Experiance icon" class="Skill-icon" />
+              <div>
+                <h3>Xcode</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/android_studio.png" alt="Experiance icon" class="Skill-icon" />
+              <div>
+                <h3>Android Studio</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/AR.png" alt="Experiance icon" class="Skill-icon" />
+              <div>
+                <h3>Augmented reality</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/VR.png" alt="Experiance icon" class="Skill-icon" />
+              <div>
+                <h3>Virtual reality</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse my projects</p>
+    <h1 class="title">Projects</h1>
+    <div class="media-scroller">
+      <div class="project-details-container">
+        <div class="project-mini-container">
+          <img src="./assets/UltraBounce.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">UltraBounce!</h2>
+          <!-- <p class="project-tagline">Swipe or die!</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://apps.apple.com/us/app/ultrabounce/id1261305993','_blank')">
+              AppStore
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.youtube.com/shorts/M4GzoAuVfnQ','_blank')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/Flappy.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">
+            Flappy Bird Shooter
+          </h2>
+          <!-- <p class="project-tagline">Tap To Flap And Destroy</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://apps.apple.com/us/app/flappy-bird-shooter/id1310355883','_blank')">
+              AppStore
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.youtube.com/shorts/s0-Zp1HnnT8','_blank')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+
+        <div class="project-mini-container">
+          <img src="./assets/cityview.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">
+            Cityview Search
+          </h2>
+          <!-- <p class="project-tagline">Tap To Flap And Destroy</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://apps.apple.com/us/app/cityview-search/id6740324283','_blank')">
+              AppStore
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://play.google.com/store/apps/details?id=com.app.cityviewsearch&hl=en','_blank')">
+              PlayStore
+            </button>
+          </div>
+        </div>
+
+
+        <div class="project-mini-container">
+          <img src="./assets/SnowRush.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Snow Rush</h2>
+          <!-- <p class="project-tagline">A Beautiful Journey</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://apps.apple.com/us/app/snow-rush/id1367425110','_blank')">
+              AppStore
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.youtube.com/shorts/Zy8eSUcfRbM','_blank')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/StickeySling.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Sticky Sling</h2>
+          <!-- <p class="project-tagline">Most addictive slingshot ever</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://apps.apple.com/us/app/sticky-sling/id1325546515','_blank')">
+              AppStore
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.youtube.com/shorts/9azbUeS7eLI','_blank')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/dontsort.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Sort it 3D</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://apps.apple.com/us/app/sort-it-3d/id1641894105','_blank')">
+              App Store
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://drive.google.com/file/d/1jNymT9LA-ULYAO2Cl1KcEhwGLcWJS9Rk/view?usp=drive_link','_blank')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- NEW UPDATE -->
+
+
+
+
+        <div class="project-mini-container">
+          <img src="./assets/Square Bird Rush.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Stacky Dash Super Hero</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://play.google.com/store/apps/details?id=com.adzkiyagames.sweetrunning','_blank')">
+              PlayStore
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/Thumb Car DriftSpeed Stars.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Thumb Car Drift: Speed Stars</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://apps.apple.com/us/app/thumb-car-drift-speed-stars/id6449668668','_blank')">
+              AppStore
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/Car Traffic Jam Escape Puzzle.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Car Traffic Jam: Escape Puzzle</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://apps.apple.com/us/app/car-traffic-jam-escape-puzzle/id6738186455','_blank')">
+              AppStore
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/Traffic Car Escape Jam Puzzle.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Traffic Car Escape: Jam Puzzle</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://apps.apple.com/us/app/traffic-car-escape-jam-puzzle/id6742539121','_blank')">
+              AppStore
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/Tile Match Triple Master 3D.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Tile Match - Triple Master 3D</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://apps.apple.com/us/app/tile-match-triple-master-3d/id1659836296','_blank')">
+              AppStore
+            </button>
+          </div>
+        </div>
+
+
+
+        <div class="project-mini-container">
+          <img src="./assets/SwapRunner.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Swap Runner</h2>
+          <!-- <p class="project-tagline">Casual Game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://apkpure.net/es/swap-runner/com.MoroSQ.SwapRunner','_blank')">
+              APkPure
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/Stacky Dash Flash Hero.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Stacky Dash Super Hero</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.ldplayer.tw/games/stacky-dash-super-hero-on-pc.html','_blank')">
+              LDPlayer
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/tappat.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Tap Pat</h2>
+          <!-- <p class="project-tagline">multi click battle game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://appadvice.com/game/app/tap-pat/1598320834','_blank')">
+              AppAdvice
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/colorpaint.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Color Paint 3D</h2>
+          <!-- <p class="project-tagline">Best Color Paint 3D Game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://appadvice.com/app/color-paint-3d-colouring-3d/1631542274','_blank')">
+              AppAdvice
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/Noughtsandcrosses.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">
+            Noughts and Crosses
+          </h2>
+          <!-- <p class="project-tagline">Board Game ( Tic Tac Toe )</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://apkpure.net/noughts-and-crosses-board-ga/com.Morosq.Noughtsandcrosses','_blank')">
+              APK APkPure
+            </button>
+          </div>
+        </div>
+
+
+        <div class="project-mini-container">
+          <img src="./assets/BallBounce.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">BallBounce</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://apkpure.net/ball-bounce-tap-jump-play/com.Morosq.BallBounce/download','_blank')">
+              PlayStore
+            </button>
+          </div>
+        </div>
+
+        <!-- NEW UPDATE -->
+
+
+        <div class="project-mini-container">
+          <img src="./assets/HotelMania_Logo.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Hotel Mania</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://drive.google.com/file/d/1YBHosfaPMF8cU6LR9RVMIlTrBxzvkPn-/view?usp=drive_link','_blank')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/sandball.jpg" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">SandBall</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://drive.google.com/file/d/1A-moZU5e0Ax2bhLx_PB-bGx3x0d1H7xA/view?usp=sharing','_blank')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+
+        <div class="project-mini-container">
+          <img src="./assets/MazeUp.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Maze Up</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.youtube.com/watch?v=WROeOIQHiIY','_blank')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/typing.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Typing Challenge</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.youtube.com/watch?v=nw1XhpsQxpc','_blank')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/taptojump.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Tap To Jump</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.youtube.com/watch?v=PaGfL1j4-YQ','_blank')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/waverider.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Wave Rider</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.youtube.com/watch?v=wX6ivvUxz_8&t=86s','_blank')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/poptheblock.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Pop The Block</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://drive.google.com/file/d/15aXdEdzUVy5DhvGv-sBmN4mRdgz8Eq6R/view?usp=drive_link','_blank')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/latterschool.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Latter School</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://drive.google.com/file/d/10mD-72LjtXyCxfKSiNJvyuEWO-2LjO2D/view?usp=drive_link','_blank')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/learnatto.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Learnatto</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://drive.google.com/file/d/1kvN3rMFzyZ4d1Hd4r8KC4T9ENnXRwo1u/view?usp=drive_link','_blank')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/BrainGame.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Brain Game</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://drive.google.com/file/d/1D2TAyV7lg6By7W1ZtC1uG9q5FX4OsPDU/view?usp=drive_link','_blank')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/dronagame.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Brain Game</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://drive.google.com/file/d/1GC2kso_rvuhUlVQ1HL1G-bd1uyCf7asA/view?usp=drive_link','_blank')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/ColorBlock.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Color Blokudoku</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://drive.google.com/file/d/15rO20T3QCZBrnJt_7yFyR01AYcX1V_tj/view?usp=drive_link','_blank')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get In Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:kakunity@gmail.com">kskunity@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/kaushik-jadav-9b9568148/" target="_blank">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/Call.png" alt="LinkedIn Icon" class="icon contact-icon" />
+        <p class="phone_no"><a href="tel:9712077287">Call Me On +91 9712077287</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Skills</a></li>
@@ -19,797 +614,9 @@
         </ul>
       </div>
     </nav>
+  </footer>
 
-    <nav id="hamburger-nav">
-      <div class="logo">Kaushik Jadav</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/Kaushik.png" alt="profile pictire" class="profile-pic-icon" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello i'am</p>
-        <h1 class="title">Kaushik jadav</h1>
-        <p class="section__text__p2">Game Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/KaushikJadavResume.pdf')"
-          >
-            Dowanload Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="linkedin"
-            class="icon"
-            onclick="window.open('https://www.linkedin.com/in/kaushik-jadav-9b9568148/','_blank')"
-          />
-          <img
-            src="./assets/github.png"
-            alt="linkedin"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
-        </div>
-      </div>
-    </section>
+  <script src="script.js"></script>
+</body>
 
-    <section id="about">
-      <p class="section__text__p1">Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="about-section-container">
-        <div class="about-me-container">
-          <div class="education-expriance">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Expriance Icon"
-                class="icon"
-              />
-              <h3>Expriance</h3>
-              <p>5+ Years <br />Unity3D Game Developer</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education Icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>
-                Computer Enginaring <br />Vishwakarma Government Engineering
-                College Chandkheda, Ahmedabad
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-me-container">
-          <div class="education-expriance">
-            <div class="details-container">
-              <img
-                src="./assets/ES.png"
-                alt="Compney Icon"
-                class="Compney-icon"
-              />
-              <h2>Essendon Studios</h2>
-              <p>JUNE 2017 - NOVEMBER 2018</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/JE.png"
-                alt="Compney Icon"
-                class="Compney-icon"
-              />
-              <h3>Jash Entertainment</h3>
-              <p>FEBRUARY 2019 - APRIL 2020</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/morosq.png"
-                alt="Compney Icon"
-                class="Compney-icon"
-              />
-              <h3>MOROSQ</h3>
-              <p>AUGUST 2020 - AUGUST 2022</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/MT.png"
-                alt="Compney Icon"
-                class="Compney-icon"
-              />
-              <h3>ManekTech</h3>
-              <p>AUGUST 2022 - PRESENT</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-
-    <section id="experience">
-      <!-- <p class="section__text__p1">Explore My Skills</p> -->
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <!-- <h2 class="experience-sub-title">Game Developer</h2> -->
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/Unity.png"
-                  alt="Experiance icon"
-                  class="Skill-icon"
-                />
-                <div>
-                  <h3>Unity 3D</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/CSharp.png"
-                  alt="Experiance icon"
-                  class="Skill-icon"
-                />
-                <div>
-                  <h3>C#</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/github.png"
-                  alt="Experiance icon"
-                  class="Skill-icon"
-                />
-                <div>
-                  <h3>Github</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/xcode.png"
-                  alt="Experiance icon"
-                  class="Skill-icon"
-                />
-                <div>
-                  <h3>Xcode</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/android_studio.png"
-                  alt="Experiance icon"
-                  class="Skill-icon"
-                />
-                <div>
-                  <h3>Android Studio</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/AR.png"
-                  alt="Experiance icon"
-                  class="Skill-icon"
-                />
-                <div>
-                  <h3>Augmented reality</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/VR.png"
-                  alt="Experiance icon"
-                  class="Skill-icon"
-                />
-                <div>
-                  <h3>Virtual reality</h3>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-
-    <section id="projects">
-      <p class="section__text__p1">Browse my projects</p>
-      <h1 class="title">Projects</h1>
-      <div class="media-scroller">
-        <div class="project-details-container">
-          <div class="project-mini-container">
-            <img
-              src="./assets/UltraBounce.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">UltraBounce!</h2>
-            <!-- <p class="project-tagline">Swipe or die!</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://apps.apple.com/us/app/ultrabounce/id1261305993','_blank')"
-              >
-                AppStore
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://www.youtube.com/shorts/M4GzoAuVfnQ','_blank')"
-              >
-                GamePlay
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/Flappy.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">
-              Flappy Bird Shooter
-            </h2>
-            <!-- <p class="project-tagline">Tap To Flap And Destroy</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://apps.apple.com/us/app/flappy-bird-shooter/id1310355883','_blank')"
-              >
-                AppStore
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://www.youtube.com/shorts/s0-Zp1HnnT8','_blank')"
-              >
-                GamePlay
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/SnowRush.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Snow Rush</h2>
-            <!-- <p class="project-tagline">A Beautiful Journey</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://apps.apple.com/us/app/snow-rush/id1367425110','_blank')"
-              >
-                AppStore
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://www.youtube.com/shorts/Zy8eSUcfRbM','_blank')"
-              >
-                GamePlay
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/StickeySling.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Sticky Sling</h2>
-            <!-- <p class="project-tagline">Most addictive slingshot ever</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://apps.apple.com/us/app/sticky-sling/id1325546515','_blank')"
-              >
-                AppStore
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://www.youtube.com/shorts/9azbUeS7eLI','_blank')"
-              >
-                GamePlay
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/dontsort.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Sort it 3D</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://apps.apple.com/us/app/sort-it-3d/id1641894105','_blank')"
-              >
-                App Store
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://drive.google.com/file/d/1jNymT9LA-ULYAO2Cl1KcEhwGLcWJS9Rk/view?usp=drive_link','_blank')"
-              >
-                GamePlay
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/colorpaint.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Color Paint 3D</h2>
-            <!-- <p class="project-tagline">Best Color Paint 3D Game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://play.google.com/store/apps/details?id=com.morosq.colorpaint3d&hl=en&gl=US','_blank')"
-              >
-                PlayStore
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/Noughtsandcrosses.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">
-              Noughts and Crosses
-            </h2>
-            <!-- <p class="project-tagline">Board Game ( Tic Tac Toe )</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://play.google.com/store/apps/details?id=com.Morosq.Noughtsandcrosses','_blank')"
-              >
-                PlayStore
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/SwapRunner.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Swap Runner</h2>
-            <!-- <p class="project-tagline">Casual Game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://play.google.com/store/apps/details?id=com.MoroSQ.SwapRunner','_blank')"
-              >
-                PlayStore
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/tappat.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Tap Pat</h2>
-            <!-- <p class="project-tagline">multi click battle game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://play.google.com/store/apps/details?id=com.Morosq.TapPat','_blank')"
-              >
-                PlayStore
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/BallBounce.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">BallBounce</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://play.google.com/store/apps/details?id=com.Morosq.BallBounce','_blank')"
-              >
-                PlayStore
-              </button>
-            </div>
-          </div>
-
-          <!-- NEW UPDATE -->
-
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/Stacky Dash Flash Hero.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Stacky Dash Super Hero</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://play.google.com/store/apps/details?id=com.mmgames.FlashHero&hl=en_GB','_blank')"
-              >
-                PlayStore
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/Square Bird Rush.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Stacky Dash Super Hero</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://play.google.com/store/apps/details?id=com.adzkiyagames.sweetrunning','_blank')"
-              >
-                PlayStore
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/Thumb Car DriftSpeed Stars.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Thumb Car Drift: Speed Stars</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://apps.apple.com/us/app/thumb-car-drift-speed-stars/id6449668668','_blank')"
-              >
-                AppStore
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/Car Traffic Jam Escape Puzzle.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Car Traffic Jam: Escape Puzzle</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://apps.apple.com/us/app/car-traffic-jam-escape-puzzle/id6738186455','_blank')"
-              >
-                AppStore
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/Traffic Car Escape Jam Puzzle.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Traffic Car Escape: Jam Puzzle</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://apps.apple.com/us/app/traffic-car-escape-jam-puzzle/id6742539121','_blank')"
-              >
-                AppStore
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/Tile Match Triple Master 3D.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Tile Match - Triple Master 3D</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://apps.apple.com/us/app/tile-match-triple-master-3d/id1659836296','_blank')"
-              >
-                AppStore
-              </button>
-            </div>
-          </div>
-
-
-          
-<!-- NEW UPDATE -->
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/MazeUp.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Maze Up</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://www.youtube.com/watch?v=WROeOIQHiIY','_blank')"
-              >
-                GamePlay
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/typing.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Typing Challenge</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://www.youtube.com/watch?v=nw1XhpsQxpc','_blank')"
-              >
-                GamePlay
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/taptojump.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Tap To Jump</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://www.youtube.com/watch?v=PaGfL1j4-YQ','_blank')"
-              >
-                GamePlay
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/waverider.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Wave Rider</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://www.youtube.com/watch?v=wX6ivvUxz_8&t=86s','_blank')"
-              >
-                GamePlay
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/poptheblock.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Pop The Block</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://drive.google.com/file/d/15aXdEdzUVy5DhvGv-sBmN4mRdgz8Eq6R/view?usp=drive_link','_blank')"
-              >
-                GamePlay
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/latterschool.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Latter School</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://drive.google.com/file/d/10mD-72LjtXyCxfKSiNJvyuEWO-2LjO2D/view?usp=drive_link','_blank')"
-              >
-                GamePlay
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/learnatto.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Learnatto</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://drive.google.com/file/d/1kvN3rMFzyZ4d1Hd4r8KC4T9ENnXRwo1u/view?usp=drive_link','_blank')"
-              >
-                GamePlay
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/BrainGame.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Brain Game</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://drive.google.com/file/d/1D2TAyV7lg6By7W1ZtC1uG9q5FX4OsPDU/view?usp=drive_link','_blank')"
-              >
-                GamePlay
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/dronagame.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Brain Game</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://drive.google.com/file/d/1GC2kso_rvuhUlVQ1HL1G-bd1uyCf7asA/view?usp=drive_link','_blank')"
-              >
-                GamePlay
-              </button>
-            </div>
-          </div>
-
-          <div class="project-mini-container">
-            <img
-              src="./assets/ColorBlock.png"
-              alt="project 1"
-              class="project-img"
-            />
-            <h2 class="experience-sub-title project-title">Color Blokudoku</h2>
-            <!-- <p class="project-tagline">bouncing ball game</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://drive.google.com/file/d/15rO20T3QCZBrnJt_7yFyR01AYcX1V_tj/view?usp=drive_link','_blank')"
-              >
-                GamePlay
-              </button>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <img
-        src="./assets/arrow.png"
-        alt="arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-
-    <section id="contact">
-      <p class="section__text__p1">Get In Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email Icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:kakunity@gmail.com">kskunity@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn Icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/kaushik-jadav-9b9568148/" target="_blank">LinkedIn</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/Call.png"
-            alt="LinkedIn Icon"
-            class="icon contact-icon"
-          />
-          <p class="phone_no"><a href="tel:9712077287">Call Me On +91 9712077287</a></p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
 </html>
