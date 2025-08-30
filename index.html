@@ -174,6 +174,20 @@
     <h1 class="title">Projects</h1>
     <div class="media-scroller">
       <div class="project-details-container">
+
+
+        <!-- 🔹 One Reusable Video Modal -->
+        <div id="videoModal" class="video-modal" onclick="closeOnOutside(event)">
+          <div class="video-content">
+            <span class="close-btn" onclick="closeVideo()">&times;</span>
+            <video id="global-video-player" controls playsinline>
+              <source id="video-source" src="" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+
         <div class="project-mini-container">
           <img src="./assets/UltraBounce.png" alt="project 1" class="project-img" />
           <h2 class="experience-sub-title project-title">UltraBounce!</h2>
@@ -183,30 +197,28 @@
               onclick="window.open('https://apps.apple.com/us/app/ultrabounce/id1261305993','_blank')">
               AppStore
             </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://www.youtube.com/shorts/M4GzoAuVfnQ','_blank')">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/UltraBounce.mp4')">
               GamePlay
             </button>
           </div>
         </div>
 
+
         <div class="project-mini-container">
           <img src="./assets/Flappy.png" alt="project 1" class="project-img" />
-          <h2 class="experience-sub-title project-title">
-            Flappy Bird Shooter
-          </h2>
-          <!-- <p class="project-tagline">Tap To Flap And Destroy</p> -->
+          <h2 class="experience-sub-title project-title">Flappy Bird Shooter</h2>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
               onclick="window.open('https://apps.apple.com/us/app/flappy-bird-shooter/id1310355883','_blank')">
               AppStore
             </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://www.youtube.com/shorts/s0-Zp1HnnT8','_blank')">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/FlapShoot.mp4')">
               GamePlay
             </button>
           </div>
         </div>
+
+
 
 
         <div class="project-mini-container">
@@ -237,8 +249,7 @@
               onclick="window.open('https://apps.apple.com/us/app/snow-rush/id1367425110','_blank')">
               AppStore
             </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://www.youtube.com/shorts/Zy8eSUcfRbM','_blank')">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/SnowRush.mp4')">
               GamePlay
             </button>
           </div>
@@ -253,8 +264,7 @@
               onclick="window.open('https://apps.apple.com/us/app/sticky-sling/id1325546515','_blank')">
               AppStore
             </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://www.youtube.com/shorts/9azbUeS7eLI','_blank')">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/StickySling.mp4')">
               GamePlay
             </button>
           </div>
@@ -269,36 +279,25 @@
               onclick="window.open('https://apps.apple.com/us/app/sort-it-3d/id1641894105','_blank')">
               App Store
             </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://drive.google.com/file/d/1jNymT9LA-ULYAO2Cl1KcEhwGLcWJS9Rk/view?usp=drive_link','_blank')">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/dontsort.mp4')">
               GamePlay
             </button>
           </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
         <!-- NEW UPDATE -->
-
-
-
 
         <div class="project-mini-container">
           <img src="./assets/Square Bird Rush.png" alt="project 1" class="project-img" />
-          <h2 class="experience-sub-title project-title">Stacky Dash Super Hero</h2>
+          <h2 class="experience-sub-title project-title">Square Bird Rush</h2>
           <!-- <p class="project-tagline">bouncing ball game</p> -->
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
               onclick="window.open('https://play.google.com/store/apps/details?id=com.adzkiyagames.sweetrunning','_blank')">
               PlayStore
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/SquareBirdRush.mp4')">
+              GamePlay
             </button>
           </div>
         </div>
@@ -402,6 +401,18 @@
         </div>
 
         <div class="project-mini-container">
+          <img src="./assets/MatchColor3D.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Match Color 3D</h2>
+          <!-- <p class="project-tagline">Best Color Paint 3D Game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://apkpure.net/es/match-color-3d/com.morosq.matchcolor3d','_blank')">
+              AppAdvice
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
           <img src="./assets/Noughtsandcrosses.png" alt="project 1" class="project-img" />
           <h2 class="experience-sub-title project-title">
             Noughts and Crosses
@@ -436,8 +447,7 @@
           <h2 class="experience-sub-title project-title">Hotel Mania</h2>
           <!-- <p class="project-tagline">bouncing ball game</p> -->
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://drive.google.com/file/d/1YBHosfaPMF8cU6LR9RVMIlTrBxzvkPn-/view?usp=drive_link','_blank')">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/HotelMania.mp4')">
               GamePlay
             </button>
           </div>
@@ -448,21 +458,31 @@
           <h2 class="experience-sub-title project-title">SandBall</h2>
           <!-- <p class="project-tagline">bouncing ball game</p> -->
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://drive.google.com/file/d/1A-moZU5e0Ax2bhLx_PB-bGx3x0d1H7xA/view?usp=sharing','_blank')">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/sandball.mp4')">
               GamePlay
             </button>
           </div>
         </div>
 
 
+
+        <div class="project-mini-container">
+          <img src="./assets/tank.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Tank Classic</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/tank.mp4')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
         <div class="project-mini-container">
           <img src="./assets/MazeUp.png" alt="project 1" class="project-img" />
           <h2 class="experience-sub-title project-title">Maze Up</h2>
           <!-- <p class="project-tagline">bouncing ball game</p> -->
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://www.youtube.com/watch?v=WROeOIQHiIY','_blank')">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/MazeUp.mp4')">
               GamePlay
             </button>
           </div>
@@ -473,8 +493,7 @@
           <h2 class="experience-sub-title project-title">Typing Challenge</h2>
           <!-- <p class="project-tagline">bouncing ball game</p> -->
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://www.youtube.com/watch?v=nw1XhpsQxpc','_blank')">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/typing.mp4')">
               GamePlay
             </button>
           </div>
@@ -485,8 +504,7 @@
           <h2 class="experience-sub-title project-title">Tap To Jump</h2>
           <!-- <p class="project-tagline">bouncing ball game</p> -->
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://www.youtube.com/watch?v=PaGfL1j4-YQ','_blank')">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/TapToJump.mp4')">
               GamePlay
             </button>
           </div>
@@ -497,8 +515,7 @@
           <h2 class="experience-sub-title project-title">Wave Rider</h2>
           <!-- <p class="project-tagline">bouncing ball game</p> -->
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://www.youtube.com/watch?v=wX6ivvUxz_8&t=86s','_blank')">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/waverider.mp4')">
               GamePlay
             </button>
           </div>
@@ -509,8 +526,7 @@
           <h2 class="experience-sub-title project-title">Pop The Block</h2>
           <!-- <p class="project-tagline">bouncing ball game</p> -->
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://drive.google.com/file/d/15aXdEdzUVy5DhvGv-sBmN4mRdgz8Eq6R/view?usp=drive_link','_blank')">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/poptheblock.mp4')">
               GamePlay
             </button>
           </div>
@@ -521,8 +537,7 @@
           <h2 class="experience-sub-title project-title">Latter School</h2>
           <!-- <p class="project-tagline">bouncing ball game</p> -->
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://drive.google.com/file/d/10mD-72LjtXyCxfKSiNJvyuEWO-2LjO2D/view?usp=drive_link','_blank')">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/latterschool.mp4')">
               GamePlay
             </button>
           </div>
@@ -533,8 +548,7 @@
           <h2 class="experience-sub-title project-title">Learnatto</h2>
           <!-- <p class="project-tagline">bouncing ball game</p> -->
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://drive.google.com/file/d/1kvN3rMFzyZ4d1Hd4r8KC4T9ENnXRwo1u/view?usp=drive_link','_blank')">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/Learnatto.mp4')">
               GamePlay
             </button>
           </div>
@@ -545,8 +559,7 @@
           <h2 class="experience-sub-title project-title">Brain Game</h2>
           <!-- <p class="project-tagline">bouncing ball game</p> -->
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://drive.google.com/file/d/1D2TAyV7lg6By7W1ZtC1uG9q5FX4OsPDU/view?usp=drive_link','_blank')">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/BrainGames.mp4')">
               GamePlay
             </button>
           </div>
@@ -554,11 +567,10 @@
 
         <div class="project-mini-container">
           <img src="./assets/dronagame.png" alt="project 1" class="project-img" />
-          <h2 class="experience-sub-title project-title">Brain Game</h2>
+          <h2 class="experience-sub-title project-title">Drona Games</h2>
           <!-- <p class="project-tagline">bouncing ball game</p> -->
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://drive.google.com/file/d/1GC2kso_rvuhUlVQ1HL1G-bd1uyCf7asA/view?usp=drive_link','_blank')">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/DronaGame.mov')">
               GamePlay
             </button>
           </div>
@@ -569,8 +581,40 @@
           <h2 class="experience-sub-title project-title">Color Blokudoku</h2>
           <!-- <p class="project-tagline">bouncing ball game</p> -->
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://drive.google.com/file/d/15rO20T3QCZBrnJt_7yFyR01AYcX1V_tj/view?usp=drive_link','_blank')">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/ColorBlockudoku.mp4')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/AR.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Shark AR</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/AR.mp4')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/AR.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Shark VR</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/VR01.mp4')">
+              GamePlay
+            </button>
+          </div>
+        </div>
+
+        <div class="project-mini-container">
+          <img src="./assets/AR.png" alt="project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Fire VR</h2>
+          <!-- <p class="project-tagline">bouncing ball game</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="openVideo('./assets/Video/VR02.mp4')">
               GamePlay
             </button>
           </div>

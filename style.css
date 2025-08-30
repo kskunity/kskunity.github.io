@@ -159,6 +159,25 @@ section {
   height: 80vh;
 }
 .section__pic-container {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  width: min(80vw, 400px);  /* responsive square */
+  aspect-ratio: 1 / 1;      /* keep square shape */
+
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0.1rem solid rgb(163, 163, 163);
+
+  mask-image: radial-gradient(circle, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+  mask-mode: alpha;
+  -webkit-mask-mode: alpha;
+
+  transition: transform .28s ease, filter .28s ease;
+/*   
   display: flex;
   height: 400px;
   width: 400px;
@@ -171,7 +190,12 @@ section {
   mask-mode: alpha;
   -webkit-mask-image: radial-gradient(closest-side, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
   -webkit-mask-mode: alpha;
-  transition: transform .28s ease, filter .28s ease;
+  transition: transform .28s ease, filter .28s ease; */
+}
+.section__pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps aspect ratio */
 }
 
 .section__text {
@@ -514,3 +538,81 @@ footer {
   height: 26vh;
   margin: 0 1rem;
 }
+
+
+.video-modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  z-index: 9999;
+
+  /* ❌ remove display:flex here */
+  justify-content: center;    
+  align-items: center;        
+  padding: 10px; /* small margin on mobile */
+  box-sizing: border-box;
+}
+
+/* Add a helper class for showing */
+.video-modal.active {
+  display: flex; /* ✅ only flex when "active" */
+}
+
+/* Video Box */
+.video-content {
+  position: relative;
+  width: 100%;
+  max-width: 800px;   /* desktop limit */
+  aspect-ratio: 16 / 9; /* keeps correct video ratio */
+  background: black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-content video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* prevent stretching */
+  display: block;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 2.5rem;   /* bigger size */
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  z-index: 10000;
+
+  background: rgba(0,0,0,0.5); /* subtle background for visibility */
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+
+/* ✅ Mobile Optimization */
+@media (max-width: 768px) {
+  .video-content {
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 0; /* edge-to-edge look */
+  }
+  .close-btn {
+    font-size: 3rem;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    top: 8px;
+    right: 12px;
+  }
+}
+
